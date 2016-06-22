@@ -1,10 +1,28 @@
 .name {
 	font-size: 1.5em;
 	margin: 0;
+
+	@include mobile {
+		margin-top: 0px;
+	}
+	@include desktop {
+		float: left;
+	}
 }
 
 .main-nav {
 	margin-top: 5px;
+	@include mobile {
+		padding: 0 0;
+		padding-bottom: 1.5em;
+	}
+	@include tablet {
+		padding-bottom: 0;
+		margin-top: 0;
+	}
+	@include desktop {
+		float: right;
+	}
 }
 
 .name a,
@@ -19,4 +37,31 @@
 .main-nav a {
 	font-size: .95em;
 	text-transform: uppercase;
+
+	@include desktop {
+		padding-right: 0;
+	}
+}
+
+.name a {
+	@include desktop {
+		padding-left: 0;
+	}
+}
+
+.main-nav li {
+	@include mobile {
+		text-align: center;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		background-color: #fff;
+	}
+	@include tablet {
+		background-color: #fafafa;
+		display: inline-block;
+	}
+	@include desktop {
+		display: inline-block;
+		margin-left: 15px;
+	}
 }

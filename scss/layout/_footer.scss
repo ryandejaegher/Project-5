@@ -1,8 +1,65 @@
 .main-footer {
 	padding: 2em 0;
 	margin-top: 30px;
+
+	@include mobile {
+		border-top: 2px solid #e6e6e6;
+		max-width: 90%;
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	@include desktop {
+		width: 80%;
+		max-width: 1150px;
+	}
 }
 
 .main-footer h3 {
 	padding: 0 0;
 } 
+
+
+.footer-name {
+	@include mobile {
+		float: left;
+	}
+}
+
+.footer-nav {
+	@include mobile {
+		float: right;
+	}
+}
+
+.footer-nav li {
+	@include mobile {
+		display: inline-block;
+		margin: 0 auto;
+		}
+	}
+
+.not-visible a { ///// Hides links in footer for mobile view
+  	@include mobile {
+  	display: none;
+ 	}
+  	@include tablet {
+  		display: inline-block;
+  		padding: 0;
+  		padding-left: 25px;
+  	}
+}
+
+.back-top a {
+	@include tablet {
+		display: none;
+	}
+}
+
+.clearfix::after {
+	@include mobile {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}

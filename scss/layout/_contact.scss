@@ -5,6 +5,17 @@
 	color: $natural-gray;
 }
 
+.description p {
+	@include tablet {
+		float: left;
+	}
+}
+
+.profile p {
+	@include tablet {
+		text-align: left;
+	}
+}
 
 #contact span {
 	display: inline-block;

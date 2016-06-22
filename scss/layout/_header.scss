@@ -1,4 +1,12 @@
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
+	@include tablet {
+		text-align: center;
+	}
+	@include desktop {
+		text-align: none;
+		margin: 0 auto;
+	}
 }
+

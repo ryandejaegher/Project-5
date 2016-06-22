@@ -1,14 +1,109 @@
 .wrap {
-	line-height: 1.6;
-	background-color: $alabaster;
-	padding-left: 1em;
-	padding-right: 1em;
+	@include mobile {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+
+	@include tablet {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+	@include desktop {
+		line-height: 1.6;
+		background-color: $alabaster;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }
 
 .container {
 	width: 80%;
 	max-width: 1150px;
+
 	@extend %padding-top;
 	@extend %padding-bottom;
+
+	@include mobile {
+		width: 90%;
+		margin: 0px auto;
+	}
+	@include desktop {
+		width: 80%;
+		max-width: 1150px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 }
 
+.profile {
+	@include mobile {
+		width: 90%;
+		margin: 0px auto;
+	}
+	@include tablet {
+		width: 100%;
+		margin: 0px auto;
+	}
+}
+
+#portfolio {
+	@include mobile {
+		background-color: #fff;
+		width: 100%;
+		margin: 0px auto;
+	}
+	@include tablet {
+		background-color: #fff;
+		width: 100%;
+		margin: 0px auto;
+	}
+}
+
+.col {
+	@include tablet {
+		float: left;
+		width: 50%;	
+	}
+	@include desktop {
+		float: left;
+		width: 33%;
+	}
+}
+
+.col p {
+	@include tablet {
+		text-align: center;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 15px;
+		font-weight: 300;
+	}
+}
+
+.profile-image {
+	@include mobile {
+		display: block;
+		margin: 0 auto;
+		max-width: 70%;
+		padding-bottom: 15px;
+	}
+	@include tablet {
+		float: right;
+		max-width: 40%;
+		padding-left: 1em;
+	}
+}
+
+.portfolio-image {
+	@include tablet {
+		padding: 0 15px;
+	}
+}
+
+.main-footer .container {
+	@include mobile {
+		font-size: .95em;
+		font-weight: 600;
+		width: 100%;
+	}
+}
