@@ -1,0 +1,14 @@
+.wrap {
+	line-height: 1.6;
+	background-color: $alabaster;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.container {
+	width: 80%;
+	max-width: 1150px;
+	@extend %padding-top;
+	@extend %padding-bottom;
+}
+

@@ -1,0 +1,28 @@
+.description,
+.contact p {
+	font-size: 1.25em;
+	font-weight: 300;
+	color: $natural-gray;
+}
+
+
+#contact span {
+	display: inline-block;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+///
+/**** Nested Rule ****/
+///
+
+.contact {
+
+	p {
+		width: 70%;
+		margin: 0 auto 25px auto;
+	}
+
+}
+
+////////

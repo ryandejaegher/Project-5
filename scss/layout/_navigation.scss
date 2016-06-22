@@ -1,0 +1,22 @@
+.name {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	@extend %centered;
+	display: inline-block;
+	font-weight: 900;
+	padding: 10px 15px;
+	display: lock;
+}
+
+.main-nav a {
+	font-size: .95em;
+	text-transform: uppercase;
+}

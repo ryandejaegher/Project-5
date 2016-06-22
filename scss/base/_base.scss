@@ -1,0 +1,61 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.6;
+	background-color: $alabaster;
+	font-family: $stack-sans-serif;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 1.8em;
+	font-weight: 400;
+}
+
+h2,
+h3,
+a,
+.name,
+p {
+	color: $tundora;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+p 
+	{
+	@extend %centered;
+/* 	 text-align: center; */
+}
+
+h2 {
+	@extend %padding-top;
+	font-size: 1.1em;
+}
+
+h3 {
+	@extend %padding-top;
+	@extend %padding-bottom;
+}
+
+a {
+	color: $tundora;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}

@@ -1,0 +1,52 @@
+@media (min-width: 1024px) {
+
+	.col {
+		float: left;
+		width: 33%;
+	}
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.wrap {
+		line-height: 1.6;
+		background-color: #fafafa;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.main-header {
+		text-align: none;
+		margin: 0 auto;
+	}
+
+	.name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.main-nav a {
+		padding-right: 0;
+	}
+
+	.name a {
+		padding-left: 0
+	}
+
+	.main-footer {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
