@@ -1,8 +1,8 @@
 .description,
 .contact p {
-	font-size: 1.25em;
+	font-size: $contact-size;
 	font-weight: 300;
-	color: $natural-gray;
+	color: $color-text-footer;
 }
 
 .description p {

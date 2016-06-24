@@ -10,7 +10,7 @@
 	}
 	@include desktop {
 		line-height: 1.6;
-		background-color: $alabaster;
+		background-color: $color-body;
 		padding-left: 1em;
 		padding-right: 1em;
 	}
@@ -48,12 +48,12 @@
 
 #portfolio {
 	@include mobile {
-		background-color: #fff;
+		background-color: $color-portfolio;
 		width: 100%;
 		margin: 0px auto;
 	}
 	@include tablet {
-		background-color: #fff;
+		background-color: $color-portfolio;
 		width: 100%;
 		margin: 0px auto;
 	}
@@ -102,7 +102,7 @@
 
 .main-footer .container {
 	@include mobile {
-		font-size: .95em;
+		font-size: $nav-size;
 		font-weight: 600;
 		width: 100%;
 	}

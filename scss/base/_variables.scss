@@ -4,23 +4,35 @@
 $tundora		: #4a4a4a;
 $alabaster		: #fafafa;
 $natural-gray	: #8b8b8a;
+$white			: #fff;
 
 
 // Functional color variables
 
 $color-body			: $alabaster;
 $color-container	: $tundora; 	
+$color-portfolio	: $white;
 
 $color-text-main	: $tundora;
 $color-text-footer	: $natural-gray;
 
-
 // Font stacks
 
 $stack-sans-serif: 'Open Sans', sans-serif;
+
+// Font size
+
+$heading-size: 1.1em;
+$paragraph-size: 1em; 
+$nav-size: .95em;
+$contact-size: 1.25em;
+$name-size: 1.5em;
 
 // Media query breakpoints
 
 $mobile		: '320px';
 $tablet		: '768px';
 $desktop	: '1024px';
+
+// Container Width
+
