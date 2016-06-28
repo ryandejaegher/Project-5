@@ -24,8 +24,7 @@
 	@extend %padding-bottom;
 
 	@include mobile {
-		width: 90%;
-		margin: 0px auto;
+		@include container(90%, 0px auto);
 	}
 	@include desktop {
 		width: 80%;
@@ -37,25 +36,21 @@
 
 .profile {
 	@include mobile {
-		width: 90%;
-		margin: 0px auto;
+		@include container(90%, 0px auto);
 	}
 	@include tablet {
-		width: 100%;
-		margin: 0px auto;
+		@include container(100%, 0px auto);
 	}
 }
 
 #portfolio {
 	@include mobile {
 		background-color: $color-portfolio;
-		width: 100%;
-		margin: 0px auto;
+		@include container(100%, 0px auto);
 	}
 	@include tablet {
 		background-color: $color-portfolio;
-		width: 100%;
-		margin: 0px auto;
+		@include container(90%, 0px auto);
 	}
 }
 
@@ -107,3 +102,4 @@
 		width: 100%;
 	}
 }
+

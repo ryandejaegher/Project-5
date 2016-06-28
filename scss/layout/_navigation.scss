@@ -8,6 +8,17 @@
 	@include desktop {
 		float: left;
 	}
+
+	a {
+		@extend %centered;
+		display: inline-block;
+		font-weight: 900;
+		padding: 10px 15px;
+		display: block;
+			@include desktop {
+				padding-left: 0;
+			}
+	}
 }
 
 .main-nav {
@@ -15,41 +26,31 @@
 	@include mobile {
 		padding: 0 0;
 		padding-bottom: 1.5em;
+		display: none;
 	}
 	@include tablet {
 		padding-bottom: 0;
 		margin-top: 0;
+		display: initial;
 	}
 	@include desktop {
 		float: right;
 	}
-}
 
-.name a,
-.main-nav a {
-	@extend %centered;
-	display: inline-block;
-	font-weight: 900;
-	padding: 10px 15px;
-	display: lock;
-}
-
-.main-nav a {
-	font-size: .95em;
-	text-transform: uppercase;
-
-	@include desktop {
-		padding-right: 0;
+	a {
+		@extend %centered;
+		display: inline-block;
+		font-weight: 900;
+		padding: 10px 15px;
+		display: block;
+		font-size: .95em;
+		text-transform: uppercase;
+			@include desktop {
+				padding-right: 0;
+			}
 	}
-}
 
-.name a {
-	@include desktop {
-		padding-left: 0;
-	}
-}
-
-.main-nav li {
+	li {
 	@include mobile {
 		text-align: center;
 		margin-top: 6px;
@@ -63,5 +64,25 @@
 	@include desktop {
 		display: inline-block;
 		margin-left: 15px;
+		}
 	}
 }
+
+
+
+/// SlickNav Menu
+
+.slicknav_menu {
+	@include mobile {
+		display: block;
+		}
+	@include tablet {
+		display: none;
+		}
+	@include desktop {
+		display: none;
+	}	
+			
+	}
+
+

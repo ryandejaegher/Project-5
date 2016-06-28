@@ -4,6 +4,7 @@
   <title>Responsive Website</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/application.css">
+	<link rel="stylesheet" href="SlickNav/dist/slicknav.css"/>
 </head>
 <body>
 	
@@ -96,6 +97,13 @@
 		</ul>
 	</div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
+<script src="SlickNav/jquery.slicknav.js"></script>
+<script>
+	$(function(){
+		$('.main-nav').slicknav();
+	});
+</script>
 </body>
 </html>
 		

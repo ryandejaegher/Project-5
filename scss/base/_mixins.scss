@@ -17,3 +17,11 @@
 		@content;
 	}
 }
+
+
+///// Text 
+
+@mixin container ($width, $margin) {
+	width: $width;
+	margin: $margin;
+}
