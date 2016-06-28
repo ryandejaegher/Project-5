@@ -139,7 +139,6 @@ a:hover {
       text-align: center; } }
   @media (min-width: 1024px) {
     .main-header {
-      text-align: none;
       margin: 0 auto; } }
 
 .main-footer {
