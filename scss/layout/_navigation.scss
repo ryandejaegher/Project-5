@@ -43,7 +43,7 @@
 		font-weight: 900;
 		padding: 10px 15px;
 		display: block;
-		font-size: .95em;
+		font-size: $nav-size;
 		text-transform: uppercase;
 			@include desktop {
 				padding-right: 0;

@@ -40,7 +40,7 @@ img {
 
 /* ---- Pseudo-classes ---- */
 a:hover {
-  color: #000; }
+  color: #8b8b8a; }
 
 /***** Layout Imports *****/
 @media (min-width: 320px) {
@@ -229,7 +229,7 @@ a:hover {
     font-weight: 900;
     padding: 10px 15px;
     display: block;
-    font-size: .95em;
+    font-size: 0.95em;
     text-transform: uppercase; }
     @media (min-width: 1024px) {
       .main-nav a {
